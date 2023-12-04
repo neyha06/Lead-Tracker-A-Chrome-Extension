@@ -1,15 +1,5 @@
-// function saveLead(){
-//     console.log("Button Clicked")
-// }
-//let myLead=["amazon.com","flipkart.com","yahoo.com"]
 let myLead=[]
-//let leads=[]
-//myLead=JSON.parse(myLead)
-//myLead= JSON.stringify(myLead) //type: String
-//myLead.push("amazon.com")
-console.log(typeof myLead) //type: object
 
-console.log(myLead)
 const inputEl= document.getElementById("input-el") //const" cant be reasssigned 
 const inputBtn= document.getElementById("input-btn")
 const ulEl= document.getElementById("ul-el")
@@ -23,9 +13,7 @@ if(leadsFromLocalStorage){
     renderLeads(myLead)
 }
 
-// const tabs=[
-//     {url: "https://www.linkedin.com/in/neha-kadam-93b85a220/"}
-// ]
+
 tabBtn.addEventListener("click",function(){
    // console.log(tabs[0].url)
 
@@ -68,30 +56,6 @@ inputBtn.addEventListener("click",function(){
     
     console.log(localStorage.getItem("myLead"))
 })
-//var x= document.getElementById("input-el").value;
-// inputBtn.addEventListener("click",function(){
-//     myLead.push(x)
-//     console.log(myLead)
-// })
-
-
-
-
-
-// for(let i=0;i<myLead.length;i++){
-//     //I> method I
-//    // ulEl.innerHTML+= "<li>"+myLead[i]+"</li>"
-
-//    //II> Method II
-//    //1.create element
-//    const li= document.createElement("li")//->li:list
-//    //2. set text content
-//    li.textContent= myLead[i]
-//    //3. append it to ul
-//    ulEl.append(li)
-
-  
-// }
 
 function renderLeads(leads){
 let listItems=""
@@ -107,27 +71,11 @@ for(let i=0;i<leads.length;i++){
 ulEl.innerHTML=listItems
 }
 
-// //eg of Template Strings/ Literals
-// const receipt="James"
-// let sender= "Ingdi"
-// //const email= "heyy " +receipt+ "!How is it going, Cheers per"
-// const email= 
-// `heyy 
-// ${receipt}!
-// How is it going, Cheers 
-// ${sender}`
-// console.log(email)
-
 //json: js Object Notation
 // null: developer signifies emptiness
 //undefined: js signifies emptiness 
 //empty String is false value
 
-// console.log(Boolean("")) //false
-// console.log(Boolean("0")) //true
-// console.log(Boolean(100))//true
-// console.log(Boolean(null))//false
-// console.log(Boolean([0])) //true
-// console.log(Boolean(-0))// false
+
 
 
